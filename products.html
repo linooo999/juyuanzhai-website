@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title.products">产品中心 | 老榆木家具、松木家具、中式古典家具</title>
+    <meta name="description" content="聚源斋古典家具提供桌案、椅凳、柜架、门窗屏风、旧木改造家具、小件摆设等实木家具产品，支持定制与批发。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="name">聚源斋古典家具</span>
+                <span class="en">Juyuanzhai Classical Furniture</span>
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link" data-i18n="nav.products">产品中心</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cases.html" class="nav-link" data-i18n="nav.cases">案例展示</a>
+                </li>
+                <li class="nav-item">
+                    <a href="custom.html" class="nav-link" data-i18n="nav.custom">定制服务</a>
+                </li>
+                <li class="nav-item">
+                    <a href="craft.html" class="nav-link" data-i18n="nav.materials">材料与工艺</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">联系我们</a>
+                </li>
+                <li class="nav-item">
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="搜索产品...">
+                        </div>
+                        <div class="search-toggle">
+                            <span class="search-icon">🔍</span>
+                        </div>
+                        <div class="search-results-dropdown"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="lang-switch">
+                        <span class="lang-opt" data-value="zh">中</span>
+                        <span>/</span>
+                        <span class="lang-opt" data-value="en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="products.headerTitle">产品中心</h1>
+                <p data-i18n="products.headerDesc">实木家具、旧木再造家具与空间配套产品</p>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <p style="margin-bottom: 30px;" data-i18n="home.catSub">聚源斋古典家具提供多种类型的实木家具与旧木再造家具。</p>
+                </div>
+
+                <div class="filter-btns">
+                    <button class="filter-btn active" data-filter="all" data-i18n="products.filterAll">全部</button>
+                    <button class="filter-btn" data-filter="table" data-i18n="products.filterTable">桌案类</button>
+                    <button class="filter-btn" data-filter="chair" data-i18n="products.filterChair">椅凳类</button>
+                    <button class="filter-btn" data-filter="cabinet" data-i18n="products.filterCabinet">柜架类</button>
+                    <button class="filter-btn" data-filter="screen" data-i18n="products.filterScreen">门窗屏风</button>
+                    <button class="filter-btn" data-filter="oldwood" data-i18n="products.filterReclaimed">旧木改造</button>
+                    <button class="filter-btn" data-filter="small" data-i18n="products.filterSmall">小件摆设</button>
+                </div>
+
+                <div id="productGrid" class="product-grid">
+                    <!-- 产品卡片将由 JavaScript 自动生成 -->
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2 data-i18n="home.ctaTitle">想了解现货、定制或批发合作？</h2>
+                <p data-i18n="home.ctaDesc">欢迎通过微信、电话或表单联系我们</p>
+                <a href="contact.html" class="btn" data-i18n="nav.contact">联系我们</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3 data-i18n="footer.brand">聚源斋古典家具</h3>
+                <p data-i18n="footer.desc">聚源斋古典家具专注中国传统实木家具、旧木再造家具与空间配套服务。</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.navHeader">快速导航</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                    <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+                    <li><a href="custom.html" data-i18n="nav.custom">定制服务</a></li>
+                    <li><a href="cases.html" data-i18n="nav.cases">生产案例</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n="footer.contactHeader">联系方式</h4>
+                <p data-i18n="footer.fPhone">电话：18911238405</p>
+                <p data-i18n="footer.fAddr">地址：北京店：北京市朝阳区高碑店古典家具街246号聚源斋</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="footer.copyright">&copy; 2024 聚源斋古典家具 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

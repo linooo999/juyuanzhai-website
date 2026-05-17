@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title.productDetail">产品详情 | 聚源斋古典家具</title>
+    <meta name="description" content="查看聚源斋实木家具产品的详细资料。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="name">聚源斋古典家具</span>
+                <span class="en">Juyuanzhai Classical Furniture</span>
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-i18n="nav.home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-i18n="nav.about">关于我们</a>
+                </li>
+                <li class="nav-item">
+                    <a href="products.html" class="nav-link" data-i18n="nav.products">产品中心</a>
+                </li>
+                <li class="nav-item">
+                    <a href="cases.html" class="nav-link" data-i18n="nav.cases">案例展示</a>
+                </li>
+                <li class="nav-item">
+                    <a href="custom.html" class="nav-link" data-i18n="nav.custom">定制服务</a>
+                </li>
+                <li class="nav-item">
+                    <a href="craft.html" class="nav-link" data-i18n="nav.materials">材料与工艺</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link" data-i18n="nav.contact">联系我们</a>
+                </li>
+                <li class="nav-item">
+                    <div class="search-container">
+                        <div class="search-input-wrapper">
+                            <input type="text" class="search-input" data-i18n-placeholder="search.placeholder" placeholder="搜索产品...">
+                        </div>
+                        <div class="search-toggle">
+                            <span class="search-icon">🔍</span>
+                        </div>
+                        <div class="search-results-dropdown"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="lang-switch">
+                        <span class="lang-opt" data-value="zh">中</span>
+                        <span>/</span>
+                        <span class="lang-opt" data-value="en">EN</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- 产品面包屑 -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <a href="index.html" data-i18n="nav.home">首页</a> / <a href="products.html" data-i18n="nav.products">产品中心</a> / <span data-i18n="detail.breadcrumb">产品详情</span>
+            </div>
+        </nav>
+
+        <section class="product-detail">
+            <div id="productDetailContainer" class="container">
+                <div class="detail-layout">
+                    <!-- 左侧：图片区域 -->
+                    <div class="detail-gallery">
+                        <div class="main-img-container">
+                            <img src="" alt="Main Image" id="mainImage">
+                        </div>
+                        <div id="thumbGrid" class="thumb-grid">
+                            <!-- 缩略图将由 JS 生成 -->
+                        </div>
+                    </div>
+
+                    <!-- 右侧：基本信息 -->
+                    <div class="detail-info">
+                        <h1 id="productName" class="detail-title"></h1>
+                        <p id="productSubtitle" class="detail-subtitle"></p>
+                        
+                        <div class="info-table">
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelID">产品编号</span>
+                                <span id="productID" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelCat">产品分类</span>
+                                <span id="productCat" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelMaterial">主要材质</span>
+                                <span id="productMaterial" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelStructure">工艺结构</span>
+                                <span id="productCraft" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelSize">常规尺寸</span>
+                                <span id="productSize" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelSpace">适用空间</span>
+                                <span id="productSpace" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelStock">是否现货</span>
+                                <span id="productStock" class="value"></span>
+                            </div>
+                            <div class="info-row">
+                                <span class="label" data-i18n="detail.labelCustom">支持定制</span>
+                                <span id="productCustom" class="value"></span>
+                            </div>
+                        </div>
+
+                        <div class="detail-actions">
+                            <a href="contact.html" class="btn" data-i18n="detail.btnWechat">微信咨询</a>
+                            <a href="contact.html" class="btn btn-outline" data-i18n="detail.btnQuote">获取报价</a>
+                            <a href="custom.html" class="btn btn-outline" data-i18n="detail.btnCustom">定制需求</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 下方：详细描述 -->
+                <div class="detail-content">
+                    <div class="detail-tabs">
+                        <div class="tab-item active" data-i18n="detail.tabHeader">详情说明</div>
+                    </div>
+                    
+                    <div class="content-body">
+                        <div class="content-section">
+                            <h3 data-i18n="detail.introTitle">产品简介</h3>
+                            <p id="productIntro"></p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3 data-i18n="detail.materialTitle">材质说明</h3>
+                            <p id="productMaterialDesc"></p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3 data-i18n="detail.craftTitle">工艺与结构</h3>
+                            <p id="productCraftDesc"></p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3 data-i18n="detail.customTitle">定制说明</h3>
+                            <p id="productCustomDesc"></p>
+                        </div>
+
+                        <div class="content-section">
+                            <h3 data-i18n="detail.careTitle">交付与保养</h3>
+                            <p id="productCareDesc"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 相关推荐 -->
+                <section class="section related-products-section">
+                    <div class="container">
+                        <div class="section-header">
+                            <p class="section-label" style="font-size: 14px; color: var(--accent-color); margin-bottom: 10px; font-weight: 500;">Related Products</p>
+                            <h2 data-i18n="detail.relatedProductsTitle">相关产品推荐</h2>
+                            <p id="relatedProductsDesc" data-i18n="detail.relatedProductsDesc">根据材质、空间、风格和搭配关系，为您推荐更多可参考的家具产品。</p>
+                        </div>
+                        <div id="relatedProducts" class="product-grid related-products-grid">
+                            <!-- 相关推荐将由 JS 生成 -->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="productNotFound" class="container" style="display: none; padding: 100px 20px; text-align: center;">
+                <h2 style="margin-bottom: 20px;">未找到该产品</h2>
+                <p style="margin-bottom: 30px;">请返回产品中心查看其他产品</p>
+                <a href="products.html" class="btn">返回产品中心</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3 data-i18n="footer.brand">聚源斋古典家具</h3>
+                <p data-i18n="footer.desc">聚源斋古典家具专注中国传统实木家具、旧木再造家具与空间配套服务。</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footer.navHeader">快速导航</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+                    <li><a href="products.html" data-i18n="nav.products">产品中心</a></li>
+                    <li><a href="custom.html" data-i18n="nav.custom">定制服务</a></li>
+                    <li><a href="cases.html" data-i18n="nav.cases">生产案例</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
+                    <li><a href="contact.html" data-i18n="nav.contact">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="footer.copyright">&copy; 2024 聚源斋古典家具 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
